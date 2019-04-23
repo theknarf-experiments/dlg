@@ -1,11 +1,12 @@
 {
-  "name": "dl_git_experiment",
+  "name": "dlg",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Frank Lyder Bredland <fl@nyggen.com>",
   "license": "MIT",
   "scripts": {
-    "nearley": "nearleyc src/grammer.ne > src/grammer.generated.js"
+    "nearley": "nearleyc src/grammer.ne > src/grammer.generated.js",
+    "test": "jest"
   },
   "dependencies": {
     "datalog.js": "https://github.com/mixu/datalog.js",
