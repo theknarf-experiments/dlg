@@ -2,7 +2,7 @@
 
 # Datalog git (DLG)
 
-Some Datalog and Git experiment, examples will be added in the future.
+Some Datalog and Git experiment. Examples in the `examples/` folder.
 
 ```
 npm install

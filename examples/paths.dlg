@@ -1,0 +1,23 @@
+# Example ported from https://github.com/mixu/datalog.js
+
+# edb
+edge('a', 'b').
+edge('a', 'c').
+edge('b', 'c').
+edge('c', 'd').
+edge('d', 'e').
+
+# idb
+path(X, Y) :- edge(X, Y).
+path(X, Y) :- path(X, Z), path(Z, Y).
+
+#  Graph used in the example:
+#
+#    /-> b \
+#  a        -> d -> e
+#    \-> c /
+#
+#  Paths:
+#    (a,b), (a,c), (b,d), (c,d), (d,e)
+#    (a,d), (b,e), (c,e)
+#    (a,e)
