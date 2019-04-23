@@ -1,7 +1,7 @@
 {
   "name": "dlg",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
+  "main": "./bin/dlg.js",
   "author": "Frank Lyder Bredland <fl@nyggen.com>",
   "license": "MIT",
   "scripts": {
@@ -12,6 +12,7 @@
     "dlg": "./bin/dlg.js"
   },
   "dependencies": {
+    "commander": "^2.20.0",
     "datalog.js": "https://github.com/mixu/datalog.js",
     "jest": "^24.7.1",
     "nearley": "^2.16.0"
