@@ -8,6 +8,9 @@
     "nearley": "nearleyc src/grammer.ne > src/grammer.generated.js",
     "test": "jest"
   },
+  "bin": {
+    "dlg": "./bin/dlg.js"
+  },
   "dependencies": {
     "datalog.js": "https://github.com/mixu/datalog.js",
     "jest": "^24.7.1",
