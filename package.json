@@ -1,20 +1,28 @@
 {
-  "name": "dlg",
-  "version": "0.0.1",
-  "main": "./bin/dlg.js",
-  "author": "Frank Lyder Bredland <fl@nyggen.com>",
-  "license": "MIT",
-  "scripts": {
-    "nearley": "nearleyc src/grammer.ne > src/grammer.generated.js",
-    "test": "jest"
-  },
-  "bin": {
-    "dlg": "./bin/dlg.js"
-  },
-  "dependencies": {
-    "commander": "^3.0.0",
-    "datalog.js": "https://github.com/mixu/datalog.js",
-    "jest": "^24.8.0",
-    "nearley": "^2.18.0"
-  }
+	"name": "dlg",
+	"version": "0.0.1",
+	"main": "./bin/dlg.js",
+	"author": "Frank Lyder Bredland <fl@nyggen.com>",
+	"license": "MIT",
+	"scripts": {
+		"prepare": "npm run nearley",
+		"nearley": "nearleyc src/grammer.ne > src/grammer.generated.js",
+		"nearley:watch": "fswatch -o0 src/grammer.ne | xargs -0 -n 1 -I {} bash -c \"npm run nearley\"",
+		"test": "jest"
+	},
+	"bin": {
+		"dlg": "./bin/dlg.js"
+	},
+	"dependencies": {
+		"commander": "^3.0.0",
+		"datalog.js": "https://github.com/mixu/datalog.js",
+		"nearley": "^2.18.0",
+		"partial.lenses": "^14.17.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"jest": "^24.8.0",
+		"moo": "^0.5.0"
+	}
 }

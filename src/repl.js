@@ -7,8 +7,8 @@ const rl = readline.createInterface({
 	prompt: '> '
 });
 
-const parser = require('./parser.js').default,
-		expand = require('datalog.js').expand;
+const { parser } = require('./parser.js'),
+		{ expand } = require('datalog.js');
 
 let edb = [],
 	 idb = [];

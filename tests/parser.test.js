@@ -1,4 +1,4 @@
-const parser = require('./parser').default;
+import { parser } from '../src/parser';
 
 test('"a(\'b\')." parses successfully', () => {
 	const newParser = parser();
