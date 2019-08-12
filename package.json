@@ -12,9 +12,9 @@
     "dlg": "./bin/dlg.js"
   },
   "dependencies": {
-    "commander": "^2.20.0",
+    "commander": "^3.0.0",
     "datalog.js": "https://github.com/mixu/datalog.js",
-    "jest": "^24.7.1",
-    "nearley": "^2.16.0"
+    "jest": "^24.8.0",
+    "nearley": "^2.18.0"
   }
 }
