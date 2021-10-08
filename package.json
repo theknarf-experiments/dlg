@@ -14,15 +14,14 @@
 		"dlg": "./bin/dlg.js"
 	},
 	"dependencies": {
-		"commander": "^3.0.0",
 		"datalog.js": "https://github.com/mixu/datalog.js",
-		"nearley": "^2.18.0",
-		"partial.lenses": "^14.17.0"
+		"commander": "^8.2.0",
+		"nearley": "^2.20.1",
+		"moo": "^0.5.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.5.5",
 		"@babel/preset-env": "^7.5.5",
-		"jest": "^24.8.0",
-		"moo": "^0.5.0"
+		"jest": "^24.8.0"
 	}
 }
